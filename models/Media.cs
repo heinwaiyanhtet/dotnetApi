@@ -4,6 +4,7 @@ namespace mahar.models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Required]
         public Guid Id { get; set; }
 
         [ForeignKey("TitleId")]
@@ -16,7 +17,7 @@ namespace mahar.models
         public Guid SeasonId { get; set; }
 
         public ImageTypeEnum ImageType { get; set; }
-
+        [MaxLength(255)]
         public string? Image { get; set; }
     }
 

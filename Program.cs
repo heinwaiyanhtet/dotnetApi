@@ -1,5 +1,8 @@
 global using System.ComponentModel.DataAnnotations;
 global using System.ComponentModel.DataAnnotations.Schema;
+global using System.ComponentModel;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

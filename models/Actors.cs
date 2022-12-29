@@ -4,7 +4,7 @@ namespace mahar.models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public Guid id { get; set; }
+        [Required]
+        public Guid Id { get; set; }
     }
-
 }

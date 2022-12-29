@@ -1,9 +1,10 @@
 namespace mahar.models
 {
-    public class Genre
+    public class Genres
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Required]
         public Guid Id { get; set; }
     }
 }
